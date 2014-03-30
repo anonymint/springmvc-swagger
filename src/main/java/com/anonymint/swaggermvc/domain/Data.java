@@ -3,8 +3,6 @@ package com.anonymint.swaggermvc.domain;
 import com.wordnik.swagger.annotations.ApiModel;
 import com.wordnik.swagger.annotations.ApiModelProperty;
 
-import java.time.Clock;
-
 /**
  * Data Domain
  *
