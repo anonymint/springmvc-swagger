@@ -15,6 +15,7 @@ public class Data {
     private Long id;
     @ApiModelProperty(value = "Type of the data", required = true, allowableValues = "A, B, C")
     private String type;
+    @ApiModelProperty(value = "Type of the data", required = true, allowableValues = "A, B, C")
     private String description;
     private String dateUpdate;
 
