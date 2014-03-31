@@ -1,5 +1,6 @@
 package com.anonymint.swaggermvc.controller;
 
+import com.anonymint.swaggermvc.config.WebConfig;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,7 +18,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
+@ContextConfiguration(classes = WebConfig.class)
 public class AppTests {
     private MockMvc mockMvc;
 
