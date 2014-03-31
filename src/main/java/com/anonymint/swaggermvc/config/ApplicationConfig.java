@@ -5,13 +5,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
- * //TODO description of this ApplicationConfig
+ * Spring Application Config
  *
- * @author <a href="mailto:ekalak.rengwanidchakul@morningstar.com">erengwa</a>
+ * @author <a href="mailto:mint.com@gmail.com">anonymint</a>
  * @date 2014-03-31
  */
 @Configuration
 @ComponentScan({"com.anonymint.swaggermvc"})
-@Import(SwaggerConfig.class)
 public class ApplicationConfig {
 }

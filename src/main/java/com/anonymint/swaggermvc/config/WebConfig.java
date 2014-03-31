@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 /**
  * Spring WebConfig
  *
- * @author <a href="mailto:ekalak.rengwanidchakul@morningstar.com">erengwa</a>
+ * @author <a href="mailto:mint.com@gmail.com">anonymint</a>
  * @date 2014-03-31
  */
 @Configuration
