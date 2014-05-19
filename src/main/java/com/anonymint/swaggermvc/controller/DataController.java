@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 /**
  * Controller
@@ -19,7 +18,7 @@ import java.time.format.DateTimeFormatter;
  */
 @Controller
 @RequestMapping(value = "/data")
-@Api(value = "data", description = "Operation of Data")
+@Api(value = "data", description = "Gropu description")
 public class DataController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
@@ -31,7 +30,7 @@ public class DataController {
         data.setId(idl);
         data.setType("A");
         data.setDescription(String.format("This is Id %s", idl));
-        data.setDateUpdate(LocalDate.now().format(DateTimeFormatter.ISO_DATE));
+        data.setDateUpdate(new Date().toString());
         return data;
     }
 }
